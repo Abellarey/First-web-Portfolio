@@ -1,0 +1,440 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box; 
+    outline: none;
+    scroll-behavior: smooth;
+}
+html{
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(41, 39, 39);
+}
+.container{
+    padding: 8px;
+    background: rgb(43, 48, 43);
+    top: 0;
+    position: sticky;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    padding: 21px;
+}
+.myhome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.myname{
+    margin-left: 100px;
+    color: aqua;
+    text-decoration: none;
+}
+.cont ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+.cont ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.cont a:hover{
+    color: white;
+    padding: 2.5px;
+    border-radius: 5px;
+    background: rgb(158, 187, 187);
+    text-decoration: underline;
+}
+.cont a:hover,
+.cont a.active{
+    color: aqua;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    margin-bottom: 80px;
+}
+.cname{
+    font-size: 2.5rem;
+    color: white;
+}
+.fname{
+    color: white;
+    font-size: 3.2rem;
+}
+#skills{
+    color: cyan;
+    display: inline-block;
+    min-width: 300px;
+}
+.sname{
+    font-size: 2.5rem;
+    color: white;
+}
+.text{
+    font-size: 1.5rem;
+    color: white;
+}
+.ident{
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: none;
+}
+.home-img img{
+    width: 25vw;
+    box-shadow: 2px 2px 20px cyan;
+    
+}
+
+.social-media a{
+    display: inline-flex;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    font-size: 20px;
+    color: cyan;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 15px 40px 0px;
+    transition: .9 ease;
+}
+.social-media a:hover{
+    background: cyan;
+    color: black;
+    box-shadow: 0px 0px 30px;
+}
+.About{
+    background: rgb(43, 41, 41);
+    padding: 150px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    top: 0;
+}
+.myImage img{
+    width: 30vw;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 20px cyan;
+}
+.heading{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.myhead{
+    color: white;
+}
+
+.myhead span{
+  color: cyan;
+}
+
+.parag{
+    padding-top: 10px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+:root{
+    --html: 80%;
+    --css: 60%;
+    --js: 50%;
+    --bts: 50%;
+    --php: 70%;
+  }
+
+  .myskills{
+    padding: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .skills {
+    margin-left: 0;
+    color: white;
+    background: rgb(39, 37, 37);
+    border: 2px solid rgb(21, 22, 22);
+    padding: 80px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 2px 2px 20px rgb(19, 18, 18);
+  }
+  
+  .skills li {
+    text-transform: uppercase;
+    margin: 20px 0;
+  }
+
+  .Myskill span{
+    color: #00FFB3;
+  }
+  div.skills h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  div.skills h1::after{
+    margin: 5px auto;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #00FFB3;
+  }
+  .bar {
+    background: #353b48;
+    display: block;
+    height: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px; 
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+    position: relative;
+  }
+  
+  .bar span {
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background: cyan;
+  }
+  
+  .html {
+    width: var(--html);
+    animation: html 2s ease;
+  
+  }
+  
+  .css {
+    width: var(--css);
+    animation: css 2s linear;
+  
+  }
+  
+  .js {
+    width: var(--js);
+    animation: js 2s linear;
+  
+  }
+  
+  .bts {
+    width: var(--bts);
+    animation: bts 2s linear;
+  }
+
+  .php {
+    width: var(--php);
+    animation: php 2s linear;
+  }
+  
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--html);
+    }
+  }
+  @keyframes html {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--html);
+    }
+  }
+  @keyframes bts {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--bts);
+    }
+  }
+  @keyframes css {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--css);
+    }
+  }
+  @keyframes js {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--js);
+    }
+  }
+  @keyframes bts {
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--bts);
+    }
+  }
+
+  @keyframes php{
+    0% {
+      width: 0%;
+    }
+  
+    100% {
+      width: var(--php);
+    }
+  }
+.myimages{
+  width: 600px;
+  height: 500px;
+  background: rgb(39, 37, 37);
+  box-shadow: 2px 2px 20px rgb(19, 18, 18);
+  border: 2px solid rgb(21, 22, 22);
+}
+
+.activity{
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  font-weight: 700;
+}
+.activity span{
+  color: #00FFB3;
+}
+.cols{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  margin: 45px;
+  padding-top: 20px;
+  
+}
+
+.certificate1{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    animation: animal1 10s linear infinite;
+}
+.certificate2{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    background-size: 100% 100%;
+    animation: animal2 15s linear infinite;
+}
+
+.certificate3{
+  width: 250px;
+  height: 180px;
+  background-size: 100% 100%;
+  object-fit: cover;
+  animation: animal3 16s linear infinite;
+}
+
+.certificate4{
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  background-size: 100% 100%;
+  animation: animal4 30s linear infinite;
+}
+
+.skill-end{
+  display: flex;
+  align-content: center;
+  gap: 100px;
+  padding-top: 50px;
+}
+
+@keyframes animal1{
+  0%{
+    background-image: url('prog1.jpg');
+  }
+  30%{
+    background-image: url('prog2.jpg');
+  }
+  60%{
+    background-image: url('prog3.jpg');
+  }
+  100%{
+    background-image: url('prog4.jpg');
+  }
+}
+
+@keyframes animal2{
+  0%{
+    background-image: url('dev1.jpg');
+  }
+  30%{
+    background-image: url('dev2.jpg');
+  }
+  60%{
+    background-image: url('dev3.jpg');
+  }
+  100%{
+    background-image: url('dev4.jpg');
+  }
+}
+
+@keyframes animal3{
+  0%{
+    background-image: url('code1.jpg');
+  }
+  30%{
+    background-image: url('code2.jpg');
+  }
+  60%{
+    background-image: url('code3.jpg');
+  }
+  100%{
+    background-image: url('code4.jpg');
+  }
+}
+
+@keyframes animal4{
+  0%{
+    background-image: url('pic1.jpg');
+  }
+  30%{
+    background-image: url('pic2.jpg');
+  }
+  60%{
+    background-image: url('pic3.jpg');
+  }
+  100%{
+    background-image: url('pic4.jpg');
+  }
+}
